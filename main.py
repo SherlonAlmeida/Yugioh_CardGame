@@ -55,7 +55,21 @@ cards_database = json.load(f)["data"]
 n_cards = len(cards_database) 
 
 #Perform queries
-find_card_by_name(cards_database)
+print("----- YUGIOH CARD GAME -----")
+while True:
+    print("1) Search by ID")
+    print("2) Search by NAME")
+    print("0) Exit")
+    opt = int(input("Type an option: "))
+    if opt == 1:
+        find_card_by_id(cards_database)
+    elif opt == 2:
+        find_card_by_name(cards_database)
+    elif opt == 0:
+        print("Bye bye...")
+        break
+    else:
+        print("Invalid option!")
  
 # Closing file
 f.close()
