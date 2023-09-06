@@ -1,0 +1,1 @@
+Reference: https://ygoprodeck.com/api-guide/
